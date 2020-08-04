@@ -1,5 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-10:1-51
-
+FROM ubuntu:19.10
 COPY package*.json ./
 
 RUN npm ci --only=production
